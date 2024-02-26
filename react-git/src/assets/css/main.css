@@ -1,0 +1,422 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+     :root {
+        /*
+    *
+    * This all are the rgb values which are used inside the
+    * tailwind config file and custom plugins css file
+    *
+    */
+        /*
+    * primary color
+    */
+        --color-accent: 0, 159, 127;
+        /*
+    * Hover state color of primary color
+    */
+        --color-accent-hover: 1, 147, 118;
+        /*
+    * shade of primary color
+    */
+        --color-accent-200: 204, 236, 229;
+        /*
+    * shade of primary color
+    */
+        --color-accent-300: 153, 217, 204;
+        /*
+    * shade of primary color
+    */
+        --color-accent-400: 77, 188, 165;
+        /*
+    * shade of primary color
+    */
+        --color-accent-500: 0, 159, 127;
+        /*
+    * shade of primary color
+    */
+        --color-accent-600: 0, 143, 114;
+        /*
+    * shade of primary color
+    */
+        --color-accent-700: 0, 119, 95;
+        /*
+    * light color
+    */
+        --color-light: 255, 255, 255;
+        /* light Hover */
+        --color-light-hover: 0, 0, 0;
+        /*
+    * dark color
+    */
+        --color-dark: 0, 0, 0;
+        /*
+    * Black muted color
+    */
+        --color-muted-black: 17, 17, 17;
+        /*
+    * Current color
+    */
+        --color-current: currentColor;
+        /*
+    *
+    * TEXT colors
+    *
+    */
+        /*
+    * text color used for body/base text -> gray-500
+    */
+        --text-base: 107, 114, 128;
+        /*
+    * dark base text color  -> gray-600
+    */
+        --text-base-dark: 75, 85, 99;
+        /*
+    * muted text color -> gray-400
+    */
+        --text-muted: 156, 163, 175;
+        /*
+    * light muted text color - gray-300
+    */
+        --text-muted-light: 209, 213, 219;
+        /*
+    * text color used for heading text -> gray-700
+    */
+        --text-sub-heading: 55, 65, 81;
+        /*
+    * text color used for heading text -> gray-800
+    */
+        --text-heading: 31, 41, 55;
+        /*
+    * text color used for heading text -> gray-900
+    */
+        --text-bolder: 31, 41, 55;
+        /*
+    *
+    * border colors
+    *
+    */
+        /*
+    * border color 50
+    */
+        --color-border-50: 249, 250, 251;
+        /*
+    * border color 100
+    */
+        --color-border-100: 243, 244, 246;
+        /*
+    * border color 200
+    */
+        --color-border-200: 229, 231, 235;
+        /*
+    * border base color which is 300
+    */
+        --color-border-base: 209, 213, 219;
+        /*
+    * border color 400
+    */
+        --color-border-400: 156, 163, 175;
+        /*
+    *
+    * Tailwind default gray color override
+    *
+    */
+        /*
+    * gray-50
+    */
+        --color-gray-50: 249, 250, 251;
+        /*
+    * gray-100
+    */
+        --color-gray-100: 243, 244, 246;
+        /*
+    * gray-200
+    */
+        --color-gray-200: 229, 231, 235;
+        /*
+    * gray-300
+    */
+        --color-gray-300: 209, 213, 219;
+        /*
+    * gray-400
+    */
+        --color-gray-400: 156, 163, 175;
+        /*
+    * gray-500
+    */
+        --color-gray-500: 107, 114, 128;
+        /*
+    * gray-600
+    */
+        --color-gray-600: 75, 85, 99;
+        /*
+    * gray-700
+    */
+        --color-gray-700: 55, 65, 81;
+        /*
+    * gray-800
+    */
+        --color-gray-800: 31, 41, 55;
+        /*
+    * gray-900
+    */
+        --color-gray-900: 31, 41, 55;
+        /*
+    * orange-50
+    */
+        --color-orange-50: 255, 247, 237;
+        /*
+    * orange-100
+    */
+        --color-orange-100: 255, 237, 213;
+        /*
+    * orange-200
+    */
+        --color-orange-200: 254, 215, 170;
+        /*
+    * orange-300
+    */
+        --color-orange-300: 253, 186, 116;
+        /*
+    * orange-400
+    */
+        --color-orange-400: 251, 146, 60;
+        /*
+    * orange-500
+    */
+        --color-orange-500: 249, 115, 22;
+        /*
+    * orange-600
+    */
+        --color-orange-600: 234, 88, 12;
+        /*
+    * orange-700
+    */
+        --color-orange-700: 194, 65, 12;
+        /*
+    * orange-800
+    */
+        --color-orange-800: 154, 52, 18;
+        /*
+    * orange-900
+    */
+        --color-orange-900: 124, 45, 18;
+    }
+    html {
+        -webkit-tap-highlight-color: transparent;
+    }
+    body {
+        @apply font-body;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-heading;
+    }
+    a {
+        @apply no-underline;
+    }
+}
+
+@layer utilities {
+    .header-bg-color {
+        background-color: hotpink;
+    }
+    .header-text-color {
+        color: white;
+    }
+    .bottom-header-bg-color {
+        background-color: blue;
+    }
+    .bottom-header-text-color {
+        color: yellow;
+    }
+    .footer-bg-color {
+        background-color: orange;
+    }
+    .footer-text-color {
+        color: blue;
+    }
+}
+
+@import './custom-plugins.css';
+.style-module_emptyIcons__Bg-FZ {
+    display: flex !important;
+}
+
+
+/* 
+.starRatingWrap {
+  display: inline-block;
+  touch-action: none;
+}
+
+
+.simpleStarRating {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  touch-action: none;
+} */
+
+
+/* .fillIcons {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+} */
+
+
+/* .emptyIcons {
+  display: inline-block;
+} */
+
+
+/* 
+.tooltip {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #333;
+  color: #fff;
+  vertical-align: middle;
+  border-radius: 5px;
+} */
+
+.rating_demo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    width: 100%;
+    /* padding: 2rem; */
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 10%);
+    margin: 0.5rem 0 1rem;
+    border-radius: 0.25rem;
+}
+
+.rating_box {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 20%);
+    margin-bottom: 2rem;
+}
+
+
+/* UTILITY CLASSE FOR SHOWING SCROLLBAR ONLY WHILE SCROLLING  */
+
+
+/* Show the scrollbar when hovering over the container */
+
+.scrollbar-on-hover::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-on-hover:hover::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    display: block;
+}
+
+
+/* Show the scrollbar thumb and track when hovering over them */
+
+.scrollbar-on-hover:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.scrollbar-on-hover:hover::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.overflow-y-overlay {
+    overflow-y: overlay;
+}
+
+
+/* SWIPER IN PRODUCT DETAILS */
+
+.swiper-slide-image div img {
+    height: 100%;
+    max-height: 90vh;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#productGallery div div {
+    display: flex;
+    align-items: flex-start;
+}
+
+#productGallery div div span {
+    height: 100% !important;
+}
+
+.react-transform-wrapper {
+    height: 100% !important;
+}
+
+.react-transform-component {
+    height: 100% !important;
+}
+
+@media screen and (min-width: 768px) {
+    #productGalleryThumbs {
+        height: 100%;
+        width: 100%;
+        overflow: visible;
+    }
+    #productGalleryThumbs div {
+        flex-direction: column !important;
+        align-items: flex-end;
+    }
+    #productGalleryThumbs div div {
+        width: 100% !important;
+        margin-right: 0px !important;
+        height: 18.6%;
+        min-height: 18.6%;
+        margin-bottom: 0.5rem;
+        max-width: 5.1rem;
+        max-height: 26px !important;
+    }
+    #productGalleryThumbs div div span {
+        min-height: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 0px) {
+    #productGalleryThumbs div {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #productGalleryThumbs div div {
+        max-width: 7rem;
+        max-height: 5.2rem;
+        min-height: 5.1rem;
+        margin-top: 0.8rem;
+    }
+    #productGalleryThumbs div div div {
+        margin-top: 0 !important;
+    }
+    #productGalleryThumbs div div span {
+        width: 100%;
+    }
+}
+
+.bg-custom-light {
+    background-color: white !important;
+}* { box-sizing: border-box; } body {margin: 0;}.gjs-shape-divider > svg{height:100%;width:100%;transform:scaleY(-1);}.gjs-shape-divider--fl-v > svg{transform:scaleY(1);}.gjs-shape-divider--fl-h > svg{transform:scaleX(-1) scaleY(-1);}.gjs-shape-divider--fl-v-h > svg{transform:scaleY(1) scaleX(-1);}.gjs-shape-divider > svg > path{fill:currentColor;}.gjs-shape-divider-inv > path{transform:scale(-1, -1) translate(-100%, -100%);}.swiper-slide img{height:100%;}@media only screen and (max-width: 992px){.hamburger1.active .bar1:nth-child(2){opacity:0;}.hamburger1.active .bar1:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger1.active .bar1:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}* { box-sizing: border-box; } body {margin: 0;}.gjs-shape-divider > svg{height:100%;width:100%;transform:scaleY(-1);}.gjs-shape-divider--fl-v > svg{transform:scaleY(1);}.gjs-shape-divider--fl-h > svg{transform:scaleX(-1) scaleY(-1);}.gjs-shape-divider--fl-v-h > svg{transform:scaleY(1) scaleX(-1);}.gjs-shape-divider > svg > path{fill:currentColor;}.gjs-shape-divider-inv > path{transform:scale(-1, -1) translate(-100%, -100%);}#iajxrk{width:441px;}#i80whf{display:flex;flex-direction:column;justify-content:center;}#iqo34n{display:flex;align-items:flex-end;justify-content:flex-end;}#i2gn9f{color:#000000;}#iu071t{background-color:#8f5d61;color:#ffffff;font-weight:300;font-family:Arial Black, Gadget, sans-serif;}#ilqdi9{color:#000000;}#iq6xnf{padding:10px;text-align:center;font-size:24px;}.swiper-slide img{height:100%;}@media only screen and (max-width: 992px){.hamburger1.active .bar1:nth-child(2){opacity:0;}.hamburger1.active .bar1:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger1.active .bar1:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}@media (max-width: 380px){#iajxrk{width:306px;}}* { box-sizing: border-box; } body {margin: 0;}#i7doqx{background-color:rgba(0, 0, 0, 0.05);}#idaum{padding:0px;}.gjs-shape-divider > svg{height:100%;width:100%;transform:scaleY(-1);}.gjs-shape-divider--fl-v > svg{transform:scaleY(1);}.gjs-shape-divider--fl-h > svg{transform:scaleX(-1) scaleY(-1);}.gjs-shape-divider--fl-v-h > svg{transform:scaleY(1) scaleX(-1);}.gjs-shape-divider > svg > path{fill:currentColor;}.gjs-shape-divider-inv > path{transform:scale(-1, -1) translate(-100%, -100%);}#ijfc5k{font-family:Georgia, serif;}#ipnb6j{font-family:Georgia, serif;background-color:#f9f9f9;background-repeat:repeat;background-position:left top;background-attachment:scroll;background-size:auto;background-image:none;}#i76l7{font-family:Georgia, serif;}.hamburger1{display:none;}.bar1{display:block;width:25px;height:3px;margin:5px auto;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;background-color:#101010;}#io3pvz{color:#d983a6;text-align:right;}#i0bcfx{height:65px;width:84px;}#ihxxfj{display:flex;justify-content:center;align-items:center;}#iv10b1{padding:10px;}#i4xb6m{border:0px solid rgb(229, 231, 235);--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;font-size:3rem;font-weight:700;margin-right:0px;margin-bottom:0px;margin-left:0px;line-height:1;letter-spacing:0.1em;--tw-text-opacity:1;text-align:center;}#ijx50i{border:0px solid rgb(229, 231, 235);--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;font-size:3rem;font-weight:700;margin-right:0px;margin-bottom:0px;margin-left:0px;line-height:1;letter-spacing:0.1em;--tw-text-opacity:1;color:rgba(0,0,0,0.55);text-align:center;font-family:Georgia, serif;}#idqxbc{padding:10px;}#itx9eb{color:rgb(53, 53, 67);font-family:-apple-system, "Helvetica Neue", sans-serif, "Mier Book";font-size:36px;letter-spacing:0.5px;}#itf8he{display:flex;justify-content:center;align-items:center;}#ilvpin{height:300px;object-fit:fill;}#ipytqb{height:500px;}#iczhcg{height:300px;}#iyvy56{height:300px;object-fit:cover;}#iz1f1n{height:500px;object-fit:fill;}#ihxw2i{font-size:3rem;text-align:center;}.mySwiper{height:35rem;}.swiper-slide{height:35rem;}.swiper-slide img{height:100%;}#ivawuu{height:30vh;width:260.671875px;object-fit:fill;}#ikkm9f{height:30vh;width:260.671875px;object-fit:fill;}#immm19{height:30vh;width:260.671875px;object-fit:fill;}#icqe76{height:30vh;width:260.671875px;object-fit:fill;}.shopiana-bg-white{background-color:white;}#iq2nsj{height:30.62109375vh;object-fit:fill;}#iuxfau{height:30.62109375vh;object-fit:fill;}#iz819g{height:30.62109375vh;object-fit:fill;}#i7g8qh{height:30.62109375vh;object-fit:fill;}@media only screen and (max-width: 992px){.hamburger1{display:block;cursor:pointer;}.hamburger1.active .bar1:nth-child(2){opacity:0;}.hamburger1.active .bar1:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger1.active .bar1:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}@media (max-width: 766px){#itx9eb{font-size:21px;}#i4xb6m{font-size:1.5rem;}}* { box-sizing: border-box; } body {margin: 0;}.hamburger1{display:none;}.bar1{display:block;width:25px;height:3px;margin:5px auto;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;background-color:#101010;}.shopiana-product-image-height{height:20rem;}#inzck{padding:10px;text-align:center;font-size:26px;font-weight:600;}#iodka{padding:10px;text-align:center;font-size:26px;font-weight:600;}.shopiana-bg-white{background-color:white;}#i90xb{height:14rem;}#ijkgk{height:14rem;}#ijo0f{height:14rem;}#ijv7l{height:14rem;}#i7jn4{color:#d983a6;}.swiper-slide img{height:100%;}@media only screen and (max-width: 992px){.hamburger1{display:block;cursor:pointer;}.hamburger1.active .bar1:nth-child(2){opacity:0;}.hamburger1.active .bar1:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger1.active .bar1:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}* { box-sizing: border-box; } body {margin: 0;}.swiper-slide img{height:100%;}@media only screen and (max-width: 992px){.hamburger1.active .bar1:nth-child(2){opacity:0;}.hamburger1.active .bar1:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger1.active .bar1:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}
